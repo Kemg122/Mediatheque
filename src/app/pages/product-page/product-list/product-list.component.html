@@ -1,1 +1,14 @@
-<p>product-list works!</p>
+<app-product-page>
+    <!-- <span *ngIf="[produits]=app-product-page.films"> -->
+        <div *ngFor="let produit of produits">
+            <app-product-card [nom]="produit.nom" [real]="produit.real" [synopsis]="produit.synopsis"
+                [annee]="produit.annee" [img]="produit.img" [details]="produit.details"></app-product-card>
+        </div>
+    <!-- </span> -->
+    <!-- <span *ngIf="[produits]=app-product-page.albums"> -->
+        <div *ngFor="let produit of produits">
+            <app-product-card [nom]="produit.nom" [artiste]="produit.artiste" [annee]="produit.annee"
+                [img]="produit.img" [details]="produit.details"></app-product-card>
+        </div>
+    <!-- </span> -->
+</app-product-page>

@@ -1,10 +1,15 @@
 <div class="carteProduit">
-    <div class="nomProduit">{{nom}}</div>
-    <div class="realProduit">{{real}}</div>
-    <div class="synopsisProduit">{{synopsis}}</div>
-    <div class="anneeProduit">{{annee}}</div>
+    <div class="nomProduit">Titre : {{nom}}</div>
+    <span *ngIf="[real]">
+        <div class="realProduit">Réalisateur : {{real}}</div>
+        <div class="synopsisProduit">Synopsis : {{synopsis}}</div>
+    </span>
+    <div class="anneeProduit">Année : {{annee}}</div>
     <div class="imgProduit">{{img}}</div>
-    <div class="artisteProduit">{{artiste}}</div>
+    <span *ngIf="[artiste]">
+        <div class="artisteProduit">Artiste : {{artiste}}</div>
+    </span>
     <div class="detailsProduit">
-    <button type="text">Détails</button></div>
+        <button type="text">Détails</button>
+    </div>
 </div>
