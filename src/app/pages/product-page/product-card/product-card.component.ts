@@ -14,19 +14,5 @@ export class ProductCardComponent implements OnInit {
   }
 
   @Input()
-  id!: number;
-  @Input()
-  nom!: string;
-  @Input()
-  real!: string;
-  @Input()
-  synopsis!: string;
-  @Input()
-  annee!: Date;
-  @Input()
-  img!: string;
-  @Input()
-  details!: string;
-  @Input()
-  artiste!: string;
+  produitCard: any;
 }

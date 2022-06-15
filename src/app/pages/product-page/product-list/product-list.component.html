@@ -1,48 +1,6 @@
+<!-- <app-product-card></app-product-card> -->
 <div class="listContenair">
   <p *ngFor="let produit of produits">
-    <span *ngIf="produit.real">
-      <span *ngIf="produit.img === ''">
-        <app-product-card
-          [nom]="produit.nom"
-          [real]="produit.real"
-          [synopsis]="produit.synopsis"
-          [annee]="produit.annee"
-          [img]="
-            'https://albumdecoloriages.com/dessin/fetes-et-occasions-speciales/coloriage-halloween-55342.jpg'
-          "
-          [details]="produit.details"
-        ></app-product-card
-      ></span>
-      <span *ngIf="produit.img !== ''">
-        <app-product-card
-          [nom]="produit.nom"
-          [real]="produit.real"
-          [synopsis]="produit.synopsis"
-          [annee]="produit.annee"
-          [img]="produit.img"
-          [details]="produit.details"
-        ></app-product-card></span
-    ></span>
-    <span *ngIf="produit.artiste">
-      <span *ngIf="produit.img === ''">
-        <app-product-card
-          [nom]="produit.nom"
-          [artiste]="produit.artiste"
-          [annee]="produit.annee"
-          [img]="
-            'https://i.pinimg.com/236x/d1/a7/05/d1a7050f008bdb267b821634f78e27ee.jpg'
-          "
-          [details]="produit.details"
-        ></app-product-card
-      ></span>
-      <span *ngIf="produit.img !== ''">
-        <app-product-card
-          [nom]="produit.nom"
-          [artiste]="produit.artiste"
-          [annee]="produit.annee"
-          [img]="produit.img"
-          [details]="produit.details"
-        ></app-product-card></span
-    ></span>
-  </p>
+    <app-product-card [produitCard]="produit"></app-product-card>
+</p>
 </div>

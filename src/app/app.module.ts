@@ -14,6 +14,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { ProductPageComponent } from './pages/product-page/product-page.component';
 import { ProductListComponent } from './pages/product-page/product-list/product-list.component';
 import { ProductCardComponent } from './pages/product-page/product-card/product-card.component';
+import { DetailPagesComponent } from './pages/detail-pages/detail-pages.component';
+import { ProductDetailsComponent } from './pages/detail-pages/product-details/product-details.component';
 
 
 
@@ -26,7 +28,9 @@ import { ProductCardComponent } from './pages/product-page/product-card/product-
     HomePageComponent,
     ProductPageComponent,
     ProductListComponent,
-    ProductCardComponent
+    ProductCardComponent,
+    DetailPagesComponent,
+    ProductDetailsComponent
   ],
   imports: [
 

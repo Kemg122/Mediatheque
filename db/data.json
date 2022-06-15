@@ -26,6 +26,15 @@
       "annee": 1999,
       "img": "",
       "details": ""
+    },
+    { "id": 4,
+      "nom": "Dirty Dancing",
+      "real": "Emile Ardolino",
+      "synopsis": "Au cours de l'été 1963, Frédériquea Houseman, dite « Bébé »b, une jeune fille de dix-sept ans, est la cadette d'une riche famille new-yorkaise. Elle passe, avec ses parents et sa sœur, ses vacances à la pension de famille Kellerman située dans l'État de New York, dans la région des montagnes Catskill.Pendant son séjour, Bébé se trouve mêlée par hasard à la vie des employés de la pension. Une des danseuses de l'établissement, à la suite d'une grossesse non désirée, est aidée par le père de Bébé, médecin. Bébé se voit alors confrontée à un monde qui lui est complètement étranger, celui de la danse. Par la suite, pour pallier l'absence de la danseuse enceinte, Bébé offre de la remplacer dans le spectacle de l'établissement, ce qui l'amène à suivre des cours avec Johnny Castle, le professeur de danse de la pension.Malgré la désapprobation de son père, Bébé tombe amoureuse de Johnny, qui est issu d'un milieu social très différent du sien.",
+      "annee": 1987,
+      "img": "",
+      "details": ""
+
     }
   ],
   "albums": [

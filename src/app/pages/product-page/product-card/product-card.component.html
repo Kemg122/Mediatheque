@@ -1,13 +1,32 @@
 <mat-card class="example-card">
   <mat-card-header>
-    <mat-card-title>{{ nom }} / {{ annee }}</mat-card-title>
-    <mat-card-subtitle>{{ real }}</mat-card-subtitle>
+    <mat-card-title>{{ produitCard.nom }} / {{ produitCard.annee }}</mat-card-title>
+    <span *ngIf="produitCard.real">
+      <mat-card-subtitle class="subtitle">{{ produitCard.real }}</mat-card-subtitle>
+    </span>
+    <span *ngIf="produitCard.artiste">
+      <mat-card-subtitle class="subtitle">{{ produitCard.artiste}}</mat-card-subtitle>
+    </span>
   </mat-card-header>
-  <img mat-card-image [src]="img" alt="Affiche" />
+  <span *ngIf="produitCard.img">
+    <img mat-card-image [src]="produitCard.img" alt="produitCard.nom" />
+  </span>
+  <span *ngIf="!produitCard.img">
+    <img
+      mat-card-image
+      [src]="
+        'https://albumdecoloriages.com/dessin/fetes-et-occasions-speciales/coloriage-halloween-55342.jpg'
+      "
+      alt="produitCard.nom"
+    />
+  </span>
   <mat-card-content>
-    <p *ngIf="synopsis">{{ synopsis | slice: 0:160 }}...</p>
+    <p *ngIf="produitCard.synopsis">
+      {{ produitCard.synopsis | slice: 0:160 }}...
+    </p>
   </mat-card-content>
+
   <mat-card-actions>
-    <button mat-button>Détails</button>
+    <button mat-button routerLink="/products/{{produitCard.id}}">Détails</button>
   </mat-card-actions>
 </mat-card>
