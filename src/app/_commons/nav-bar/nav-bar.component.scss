@@ -1,17 +1,18 @@
 .navBarSousContainer {
   display: flex;
   flex-direction: row;
-  background-color: black;
+  background-color: rgb(55, 4, 55);
+  border: 3px solid purple;
   color: white;
   justify-content: space-between;
   height: 50px;
 }
-.titreNavBar{
+.titreNavBar {
   margin-top: auto;
   margin-bottom: auto;
   margin-left: 5px;
 }
-.boutonNavBar{
+.boutonNavBar {
   margin-top: auto;
   margin-bottom: auto;
   margin-right: 5px;
