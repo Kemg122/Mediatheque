@@ -45,7 +45,7 @@ export class ProductPageComponent implements OnInit {
       nom: 'The Dark Side of the Moon',
       artiste: 'Pink Floyd',
       annee: 1973,
-      img: '',
+      img: 'https://librairiemusicaledefrance.com/108785-large_default/pink-floyd-dark-side-of-the-moon.jpg',
       details: '',
     },
     {
@@ -53,7 +53,7 @@ export class ProductPageComponent implements OnInit {
       nom: 'Space Oddity',
       artiste: 'David Bowie',
       annee: 1969,
-      img: '',
+      img: 'https://lafilledanslalune.fr/wp-content/uploads/2017/09/spaceoddity.png',
       details: '',
     },
   ];

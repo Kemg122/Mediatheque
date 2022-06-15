@@ -5,7 +5,7 @@
   </mat-card-header>
   <img mat-card-image [src]="img" alt="Affiche" />
   <mat-card-content>
-    <p>{{ synopsis | slice: 0:160 }}...</p>
+    <p *ngIf="synopsis">{{ synopsis | slice: 0:160 }}...</p>
   </mat-card-content>
   <mat-card-actions>
     <button mat-button>Détails</button>
