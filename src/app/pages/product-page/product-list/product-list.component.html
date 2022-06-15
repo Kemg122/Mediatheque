@@ -1,14 +1,48 @@
-<app-product-page>
-    <!-- <span *ngIf="[produits]=app-product-page.films"> -->
-        <div *ngFor="let produit of produits">
-            <app-product-card [nom]="produit.nom" [real]="produit.real" [synopsis]="produit.synopsis"
-                [annee]="produit.annee" [img]="produit.img" [details]="produit.details"></app-product-card>
-        </div>
-    <!-- </span> -->
-    <!-- <span *ngIf="[produits]=app-product-page.albums"> -->
-        <div *ngFor="let produit of produits">
-            <app-product-card [nom]="produit.nom" [artiste]="produit.artiste" [annee]="produit.annee"
-                [img]="produit.img" [details]="produit.details"></app-product-card>
-        </div>
-    <!-- </span> -->
-</app-product-page>
+<div class="listContenair">
+  <p *ngFor="let produit of produits">
+    <span *ngIf="produit.real">
+      <span *ngIf="produit.img === ''">
+        <app-product-card
+          [nom]="produit.nom"
+          [real]="produit.real"
+          [synopsis]="produit.synopsis"
+          [annee]="produit.annee"
+          [img]="
+            'https://www.filmspourenfants.net/wp-content/uploads/2018/06/les-lapins-cretins-invasion-a-352x500.jpg'
+          "
+          [details]="produit.details"
+        ></app-product-card
+      ></span>
+      <span *ngIf="produit.img !== ''">
+        <app-product-card
+          [nom]="produit.nom"
+          [real]="produit.real"
+          [synopsis]="produit.synopsis"
+          [annee]="produit.annee"
+          [img]="produit.img"
+          [details]="produit.details"
+        ></app-product-card></span
+    ></span>
+    <span *ngIf="produit.artiste">
+      <span *ngIf="produit.img === ''">
+        <app-product-card
+          [nom]="produit.nom"
+          [artiste]="produit.artiste"
+          [annee]="produit.annee"
+          [img]="
+            'https://i.pinimg.com/236x/d1/a7/05/d1a7050f008bdb267b821634f78e27ee.jpg'
+          "
+          [details]="produit.details"
+        ></app-product-card
+      ></span>
+      <span *ngIf="produit.img !== ''">
+        <app-product-card
+          [nom]="produit.nom"
+          [artiste]="produit.artiste"
+          [annee]="produit.annee"
+          [img]="produit.img"
+          [details]="produit.details"
+        ></app-product-card></span
+    ></span>
+  </p>
+</div>
