@@ -1,15 +1,13 @@
-<div class="carteProduit">
-    <div class="nomProduit">Titre : {{nom}}</div>
-    <span *ngIf="[real]">
-        <div class="realProduit">Réalisateur : {{real}}</div>
-        <div class="synopsisProduit">Synopsis : {{synopsis}}</div>
-    </span>
-    <div class="anneeProduit">Année : {{annee}}</div>
-    <div class="imgProduit">{{img}}</div>
-    <span *ngIf="[artiste]">
-        <div class="artisteProduit">Artiste : {{artiste}}</div>
-    </span>
-    <div class="detailsProduit">
-        <button type="text">Détails</button>
-    </div>
-</div>
+<mat-card class="example-card">
+  <mat-card-header>
+    <mat-card-title>{{ nom }} / {{ annee }}</mat-card-title>
+    <mat-card-subtitle>{{ real }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image [src]="img" alt="Affiche" />
+  <mat-card-content>
+    <p>{{ synopsis | slice: 0:160 }}...</p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Détails</button>
+  </mat-card-actions>
+</mat-card>
